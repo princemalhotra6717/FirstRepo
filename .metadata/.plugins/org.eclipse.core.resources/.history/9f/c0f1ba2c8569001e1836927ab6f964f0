@@ -1,0 +1,11 @@
+package com.crm.qa.pages;
+
+import com.crm.qa.base.TestBase;
+
+public class SearchPage {
+	
+	public void searchPage() {
+		System.out.println("searchPage");
+	}
+
+}
