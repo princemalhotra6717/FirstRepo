@@ -15,6 +15,12 @@ import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 
 
 public class HomePageTest extends TestBase {
@@ -38,14 +44,24 @@ public class HomePageTest extends TestBase {
 		contactsPage = new ContactsPage();
     }
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Verify HomePage Title")
+	@Severity(SeverityLevel.MINOR)
+	@Description("Verify HomePage Title.............")
+	@Feature("Feature1:Logo")
+	@Story("Story: Logo Presence")
+	
 	public void verifyHomePageTitleTest() {
 		
 		String homePageTitle = homePage.verifyHomePageTitle();
 		System.out.println("title of the page is.."+homePageTitle);
-		Assert.assertEquals(homePageTitle, "Cogmento CRM" , "Home Page Title is not displayed");
+		Assert.assertEquals(homePageTitle, "Cogmento CRM........." , "Home Page Title is not displayed");
 		}
-	@Test(priority=2)
+	@Test(priority=2 , description = "Verify CorrectUserName Displayed")
+	@Description("Verify CorrectUserName Displayed.............")
+	@Feature("Feature2:UserName")
+	@Story("Story: UserName Presence")
+	@Severity(SeverityLevel.BLOCKER)
+	
 	public void verifyUserNameTest() {
 		
 		Assert.assertTrue(homePage.verifyCorrectUserName());
@@ -56,6 +72,10 @@ public class HomePageTest extends TestBase {
 		}
 	
 	@Test(priority=3)
+	@Description("Verify HoverToContactsDisplayed.............")
+	@Feature("Feature3:Hover")
+	@Story("Story: Contacts Presence") 
+	@Severity(SeverityLevel.CRITICAL)
 	public void hoverFunction() {
 		WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20));
 	    
@@ -66,6 +86,10 @@ public class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=4)
+	@Description("Verify Contacts Clilckable.............")
+	@Feature("Feature4:HoverClick")
+	@Story("Story: Contacts Click Presence") 
+	@Severity(SeverityLevel.MINOR)
 	public void verifyContactsLinkTest() {
 		contactsPage = homePage.clickOnContactsLink();
 	}

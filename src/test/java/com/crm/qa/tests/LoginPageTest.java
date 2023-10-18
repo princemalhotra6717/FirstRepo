@@ -30,9 +30,14 @@ public class LoginPageTest extends TestBase {
 	@Test
 	public void loginTest() throws InterruptedException  {
 	 loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+	} 
+	 @Test
+	 public void Test3() {
 	 
-}
-@AfterMethod
+	 Assert.assertEquals(false , true);
+	 } 
+	 
+	 @AfterMethod
 	public void teardown() {
 	driver.quit();
 }
