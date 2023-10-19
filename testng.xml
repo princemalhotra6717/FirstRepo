@@ -5,6 +5,11 @@
 		<listener class-name="Analyzer.MyTransformer"/>
 		
 </listeners>
+
+<listeners>
+		<listener class-name="allureReports.AllureListener"/>
+		
+</listeners>
 		
   <test thread-count="2" name="Free CRM App Test Cases">
     <classes>

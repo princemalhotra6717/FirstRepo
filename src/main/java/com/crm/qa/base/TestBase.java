@@ -58,6 +58,9 @@ public class TestBase {
 	    driver.get(prop.getProperty("url"));
 	    
 	    }
+	    public static WebDriver getDriver() {
+			return driver;
+	    	
 	
 	
 	
@@ -65,7 +68,7 @@ public class TestBase {
 	
 	
 }
-	
+}
 	
 	
 	
