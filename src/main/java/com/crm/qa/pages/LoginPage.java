@@ -49,7 +49,7 @@ public class LoginPage extends TestBase {
     public LoginPage() {
     	PageFactory.initElements(driver, this);
     }
-    //Actions:
+    
     public String validateLoginPageTitle() {
     	return driver.getTitle();
     }

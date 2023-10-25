@@ -23,7 +23,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//span[text()='Contacts']")
 	WebElement hoverFunctions;
 	
-	//Initializing the Page Objects:
+	
 	public HomePage() {
     	PageFactory.initElements(driver, this);
     }

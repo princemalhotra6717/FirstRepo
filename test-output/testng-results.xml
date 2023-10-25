@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T14:53:01 IST" name="Default suite" finished-at="2023-10-20T14:53:31 IST" duration-ms="30087">
+  <suite started-at="2023-10-23T10:08:26 IST" name="Default suite" finished-at="2023-10-23T10:09:42 IST" duration-ms="76220">
     <groups>
     </groups>
-    <test started-at="2023-10-20T14:53:01 IST" name="Default test" finished-at="2023-10-20T14:53:31 IST" duration-ms="30087">
-      <class name="com.crm.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:01 IST" name="setUp" finished-at="2023-10-20T14:53:10 IST" duration-ms="8496" status="PASS">
+    <test started-at="2023-10-23T10:08:26 IST" name="Default test" finished-at="2023-10-23T10:09:42 IST" duration-ms="76220">
+      <class name="com.crm.qa.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:26 IST" name="setUp" finished-at="2023-10-23T10:08:42 IST" duration-ms="15999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Test3()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:10 IST" name="Test3" finished-at="2023-10-20T14:53:10 IST" duration-ms="69" status="FAIL">
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:42 IST" name="verifyHomePageTitleTest" description="Verify HomePage Title" finished-at="2023-10-23T10:08:42 IST" duration-ms="102" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Home Page Title is not displayed expected [Cogmento CRM.........] but found [Cogmento CRM]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Home Page Title is not displayed expected [Cogmento CRM.........] but found [Cogmento CRM]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at com.crm.qa.tests.LoginPageTest.Test3(LoginPageTest.java:37)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.crm.qa.tests.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:57)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,36 +57,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:10 IST" name="teardown" finished-at="2023-10-20T14:53:10 IST" duration-ms="449" status="PASS">
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:42 IST" name="teardown" finished-at="2023-10-23T10:08:43 IST" duration-ms="598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:10 IST" name="setUp" finished-at="2023-10-20T14:53:16 IST" duration-ms="5695" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:43 IST" name="setUp" finished-at="2023-10-23T10:08:56 IST" duration-ms="13364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:16 IST" name="loginTest" finished-at="2023-10-20T14:53:25 IST" duration-ms="8705" status="PASS">
+        <test-method signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:56 IST" name="verifyUserNameTest" description="Verify CorrectUserName Displayed" finished-at="2023-10-23T10:08:58 IST" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:25 IST" name="teardown" finished-at="2023-10-20T14:53:25 IST" duration-ms="400" status="PASS">
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:58 IST" name="teardown" finished-at="2023-10-23T10:08:59 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:25 IST" name="setUp" finished-at="2023-10-20T14:53:31 IST" duration-ms="5668" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:08:59 IST" name="setUp" finished-at="2023-10-23T10:09:12 IST" duration-ms="13446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPageTitle()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:31 IST" name="validateLoginPageTitle" finished-at="2023-10-20T14:53:31 IST" duration-ms="17" status="PASS">
+        <test-method signature="hoverFunction()[pri:3, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:09:12 IST" name="hoverFunction" finished-at="2023-10-23T10:09:15 IST" duration-ms="2786" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPageTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.LoginPageTest@76c548f]" started-at="2023-10-20T14:53:31 IST" name="teardown" finished-at="2023-10-20T14:53:31 IST" duration-ms="365" status="PASS">
+        </test-method> <!-- hoverFunction -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:09:15 IST" name="teardown" finished-at="2023-10-23T10:09:16 IST" duration-ms="927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.crm.qa.tests.LoginPageTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:09:16 IST" name="setUp" finished-at="2023-10-23T10:09:37 IST" duration-ms="20719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyContactsLinkTest()[pri:4, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:09:37 IST" name="verifyContactsLinkTest" finished-at="2023-10-23T10:09:40 IST" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLinkTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.tests.HomePageTest@5ff2e84b]" started-at="2023-10-23T10:09:40 IST" name="teardown" finished-at="2023-10-23T10:09:42 IST" duration-ms="2012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.qa.tests.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
